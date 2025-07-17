@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Records</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button onclick="toggleDarkMode()" id="modeToggle">🌙 Dark Mode</button>
+
+    <header class="main-header">
+  <h1>🎓 Student Record Manager</h1>
+  <nav>
+    <a href="index.html">Add Student</a>
+    <a href="records.html">View Records</a>
+    <a href="search.html">Search Student</a>
+  </nav>
+</header>
+
+
+
+  <div class="container">
+    <div class="container">
+    <h2>Student Records</h2>
+    <button onclick="sortStudents()">🔢 Sort by Roll Number</button>
+    <button onclick="exportToCSV()">📤 Export to CSV</button>
+    <div id="studentList"></div>
+  </div>
+
+
+  <script type="module" src="recordsHandler.js"></script>
+</body>
+</html>

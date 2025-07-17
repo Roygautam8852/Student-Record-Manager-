@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Student</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button onclick="toggleDarkMode()" id="modeToggle">🌙 Dark Mode</button>
+  <header class="main-header">
+    <h1>🎓 Student Record Manager</h1>
+    <nav class="top-nav">
+      <a href="index.html">Add Student</a>
+      <a href="records.html">View Records</a>
+      <a href="search.html">Search Student</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>🔎 Search by Roll Number</h2>
+    <input type="number" id="searchRoll" placeholder="Enter Roll Number" />
+    <button onclick="searchStudent()">Search</button>
+    <div id="searchResult"></div>
+  </div>
+
+  <script type="module" src="searchHandler.js"></script>
+</body>
+</html>
